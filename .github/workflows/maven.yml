@@ -9,11 +9,23 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
+  #push:
+  #  branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+    type: 
+      - opened
+      - closed
+  workflow_dispatch:
+    inputs: 
+      loglevel:
+        description: Log Level 
+        required: true 
+        type: text 
+      idade: 
+        description: idade 
+        required: true 
+        type: integer 
 jobs:
   echo:
     runs-on: ubuntu-latest
