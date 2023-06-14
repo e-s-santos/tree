@@ -26,6 +26,14 @@ on:
         description: idade 
         required: true 
         type: integer 
+      choice: 
+        description: escolha 
+        required: true 
+        type: choice 
+        options: 
+          - continue
+          - pause 
+          - break
 jobs:
   echo:
     runs-on: ubuntu-latest
