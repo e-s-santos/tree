@@ -16,6 +16,7 @@ on:
 
 jobs:
   echo:
+    runs-on: ubuntu-latest
     steps:
     - name: Etapa Inicial
       run: | 
