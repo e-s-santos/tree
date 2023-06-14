@@ -16,7 +16,8 @@ on:
 
 jobs:
   echo:
-    steps: 
+    steps:
+    - name: Etapa Inicial
       run: | 
         echo "Testando o github"
   build:
