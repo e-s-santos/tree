@@ -16,8 +16,9 @@ on:
 
 jobs:
   echo:
-    run: | 
-      echo "Testando o github"
+    steps: 
+      run: | 
+        echo "Testando o github"
   build:
     needs: echo
     runs-on: ubuntu-latest
