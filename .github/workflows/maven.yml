@@ -9,26 +9,30 @@
 name: Java CI with Maven
 
 on:
-  #push:
-  #  branches: [ "master" ]
+  push:
+    branches: [ "master" ]
+    paths-ignore: 
+      - '.github/workflows/*'
   pull_request:
     branches: [ "master" ]
     type: 
       - opened
       - closed
   workflow_dispatch:
+    paths-ignore: 
+      - '.github/workflows/*'
     inputs: 
       loglevel:
         description: Log Level 
-        required: true 
+        required: false 
         type: text 
       idade: 
         description: idade 
-        required: true 
+        required: false 
         type: integer 
       choice: 
         description: escolha 
-        required: true 
+        required: false 
         type: choice 
         options: 
           - continue
