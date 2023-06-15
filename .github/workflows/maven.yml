@@ -61,7 +61,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: upload Art
       uses: actions/upload-artifact@v3
-      whith: 
+      with: 
         name: java
         paths: | 
           "*.jar"
