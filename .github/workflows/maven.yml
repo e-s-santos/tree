@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo Vars 
-      run: "echo ${{ ENV_1 }} e ${{ ENV_2 }}"
+      run: "echo $ENV_1  e $ENV_2"
     - name: checkout
       uses: actions/checkout@v3
     - name: Set up JDK 17
