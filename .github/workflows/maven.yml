@@ -65,6 +65,7 @@ jobs:
         name: java
         path: /home/runner/work/tree/tree/tree-0.0.1-SNAPSHOT.jar
   dockerImage: 
+    needs: build
     runs-on: ubuntu-latest
     steps: 
     - name: download_jar 
