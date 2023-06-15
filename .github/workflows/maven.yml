@@ -72,5 +72,7 @@ jobs:
       uses: actions/download-artifact@v3
       with: 
         name: java
+    - name: identificando arquivos 
+      run: ls -ltr 
     - name: build 
       run: docker build -f ${{ github.workspace }}/Dockerfile
