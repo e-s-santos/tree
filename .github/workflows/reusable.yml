@@ -1,0 +1,14 @@
+name: reusable test
+on: 
+  workflow_call: 
+    imputs_name: 
+      description: var teste 
+      required: false 
+      default: ' ---- '
+      type: string 
+jobs: 
+  echo: 
+  runs-on: ubuntu-latest 
+  steps: 
+  - name: apenas um eco 
+    run: echo "Um eco ${{ inputs.imputs_name }} "

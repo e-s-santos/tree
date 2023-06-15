@@ -117,3 +117,10 @@ jobs:
     steps: 
     - name: echo
       run: echo "Falhou na autenticação"
+  CD: 
+    runs-on: ubuntun-latest 
+    steps: 
+    - name: Apenas um Eco 
+      uses: ./reusable.yml
+      with: 
+        imputs_name: name
