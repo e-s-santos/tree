@@ -117,10 +117,13 @@ jobs:
     steps: 
     - name: echo
       run: echo "Falhou na autenticação"
-  CD: 
-    runs-on: ubuntu-latest
-    steps: 
-    - name: Apenas um Eco 
-      uses: ./.github/workflows/reusable.yml
-      with: 
-        imputs_name: name
+  CD:
+    uses: ./.github/workflows/reusable.yml
+    with: 
+      imputs_name: name
+    #runs-on: ubuntu-latest
+    #steps: 
+    #- name: Apenas um Eco 
+    #  uses: ./.github/workflows/reusable.yml
+    #  with: 
+    #    imputs_name: name
