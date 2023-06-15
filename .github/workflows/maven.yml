@@ -72,6 +72,9 @@ jobs:
       uses: actions/download-artifact@v3
       with: 
         name: java
+    - name: artefato
+      run: | 
+        cp * /tmp
     - name: checkout
       uses: actions/checkout@v3
     - name: Build and push
