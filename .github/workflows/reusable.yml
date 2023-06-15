@@ -7,7 +7,7 @@ on:
       default: ' ---- '
       type: string 
 jobs: 
-  echo: 
+  reuso: 
   runs-on: ubuntu-latest
   steps: 
   - name: apenas um eco 
