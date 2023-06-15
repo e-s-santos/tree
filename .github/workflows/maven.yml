@@ -121,6 +121,6 @@ jobs:
     runs-on: ubuntun-latest 
     steps: 
     - name: Apenas um Eco 
-      uses: ./reusable.yml
+      uses: ./.github/workflows/reusable.yml
       with: 
         imputs_name: name
