@@ -72,12 +72,6 @@ jobs:
       uses: actions/download-artifact@v3
       with: 
         name: java
-    - name: artefato
-      run: | 
-        cp * /tmp
-        ls -ltr 
-        ls -ltr /tmp
-        chmod 777 /tmp/*
     - name: checkout
       uses: actions/checkout@v3
     - name: Set up QEMU
