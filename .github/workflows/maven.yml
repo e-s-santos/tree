@@ -120,7 +120,7 @@ jobs:
   CD:
     uses: ./.github/workflows/reusable.yml
     with: 
-      imputs_name: name
+      imputs_name: uma variavel para alegrar o dia
     #runs-on: ubuntu-latest
     #steps: 
     #- name: Apenas um Eco 
