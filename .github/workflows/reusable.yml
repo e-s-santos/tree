@@ -1,11 +1,12 @@
 name: reusable test
 on: 
   workflow_call: 
-    imputs_name: 
-      description: var teste 
-      required: false 
-      default: ' ---- '
-      type: string 
+    inputs: 
+      imputs_name: 
+        description: var teste 
+        required: false 
+        default: ' ---- '
+        type: string 
 jobs: 
   reuso: 
   runs-on: ubuntu-latest
