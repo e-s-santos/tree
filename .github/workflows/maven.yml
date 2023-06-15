@@ -74,8 +74,8 @@ jobs:
         name: java
     - name: checkout
       uses: actions/checkout@v3
-      - name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: user/app:latest
+    - name: Build and push
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: user/app:latest
