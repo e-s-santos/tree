@@ -93,7 +93,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: chorandoOutput
       if: steps.dockerLogin.outcome == "Failure"
-        run: echo "Nao autenticou"
+      run: echo "Nao autenticou"
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
