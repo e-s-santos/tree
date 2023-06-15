@@ -38,8 +38,12 @@ on:
           - continue
           - pause 
           - break
+env:
+  ENV_1: "TESTE1"
 jobs:
   echo:
+    env:
+      ENV_2: "TESTE2"
     runs-on: ubuntu-latest
     steps:
     - name: Etapa Inicial
@@ -49,6 +53,8 @@ jobs:
     needs: echo
     runs-on: ubuntu-latest
     steps:
+    - name: echo Vars 
+        run: "echo {{ ENV_1 }} e {{ ENV_2 }}"
     - name: checkout
       uses: actions/checkout@v3
     - name: Set up JDK 17
