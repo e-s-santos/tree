@@ -100,7 +100,7 @@ jobs:
         push: false
         tags: user/app:latest
   ReportError: 
-    needs: dockerImage
+    needs: [dockerImage,build] 
     runs-on: ubuntu-latest
     if: failure() 
     steps: 
