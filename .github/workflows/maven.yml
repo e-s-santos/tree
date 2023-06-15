@@ -47,6 +47,8 @@ jobs:
     - name: Etapa Inicial
       run: | 
         echo "Validando a exec"
+    - name: Custom Action
+      uses: ./github/action/echosnow.yml
   echo:
     runs-on: ubuntu-latest
     steps:
