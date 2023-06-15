@@ -99,3 +99,10 @@ jobs:
       with:
         push: false
         tags: user/app:latest
+  ReportError: 
+    needs: dockerImage
+    runs-on: ubuntu-latest
+    if: failure() 
+    steps: 
+    - name: echo
+      run: echo "Falhou na autenticação"
