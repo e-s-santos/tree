@@ -9,7 +9,7 @@ on:
         type: string 
 jobs: 
   reuso: 
-  runs-on: ubuntu-latest
-  steps: 
-  - name: apenas um eco 
-    run: echo "Um eco ${{ inputs.imputs_name }} "
+    runs-on: ubuntu-latest
+    steps: 
+    - name: apenas um eco 
+      run: echo "Um eco ${{ inputs.imputs_name }} "
