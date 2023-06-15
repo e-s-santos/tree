@@ -72,6 +72,8 @@ jobs:
       uses: actions/download-artifact@v3
       with: 
         name: java
+    - name: checkout
+      uses: actions/checkout@v3
     - name: identificando arquivos 
       run: ls -ltr 
     - name: build 
