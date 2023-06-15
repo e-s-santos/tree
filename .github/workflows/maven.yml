@@ -41,6 +41,12 @@ on:
 env:
   ENV_1: "TESTE1"
 jobs:
+  echo1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Etapa Inicial
+      run: | 
+        echo "Validando a exec"
   echo:
     runs-on: ubuntu-latest
     steps:
@@ -100,7 +106,7 @@ jobs:
         push: false
         tags: user/app:latest
   ReportError: 
-    needs: build 
+    needs: [echo1, dockerImage] 
     runs-on: ubuntu-latest
     if: failure() 
     steps: 
