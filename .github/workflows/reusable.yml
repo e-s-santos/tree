@@ -8,7 +8,7 @@ on:
       type: string 
 jobs: 
   echo: 
-  runs-on: ubuntu-latest 
+  runs-on: ubuntu-latest
   steps: 
   - name: apenas um eco 
     run: echo "Um eco ${{ inputs.imputs_name }} "
