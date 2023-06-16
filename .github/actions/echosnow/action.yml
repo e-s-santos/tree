@@ -1,7 +1,7 @@
 name: "echos"
 descripts: "teste"
 runs:
-  using: 'composite'
+  using: "composite"
   steps: 
     - name: echo
       run: echo "testes"
